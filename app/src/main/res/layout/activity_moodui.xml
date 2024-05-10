@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moodui">
+
+
+    <Button
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:onClick="backButton"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/backarrow"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:letterSpacing="0.02"
+        android:text="How you feeling today?"
+        android:textColor="#09151E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="620sp"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp">
+
+            <LinearLayout
+                android:layout_width="200sp"
+                android:layout_height="103sp"
+                android:background="@drawable/filledbg"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="88sp"
+                    android:layout_height="22sp"
+                    android:onClick="verygood"
+                    android:layout_marginStart="44sp"
+                    android:layout_marginTop="40sp"
+                    android:background="@drawable/verygood" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="144sp"
+                android:layout_height="103sp"
+                android:layout_marginStart="20sp"
+                android:background="@drawable/hollowbg"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="88sp"
+                    android:layout_height="22sp"
+                    android:onClick="okish"
+                    android:layout_marginStart="19sp"
+                    android:layout_marginTop="40sp"
+                    android:background="@drawable/okish" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp">
+
+            <LinearLayout
+                android:layout_width="177sp"
+                android:layout_height="103sp"
+                android:background="@drawable/hollowbg"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="88sp"
+                    android:onClick="verybad"
+                    android:layout_height="22sp"
+                    android:layout_marginStart="44sp"
+                    android:layout_marginTop="40sp"
+                    android:background="@drawable/verybad" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="144sp"
+                android:layout_height="103sp"
+                android:layout_marginStart="20sp"
+                android:background="@drawable/hollowbg"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="88sp"
+                    android:layout_height="22sp"
+                    android:layout_marginStart="19sp"
+                    android:onClick="angry"
+                    android:layout_marginTop="40sp"
+                    android:background="@drawable/angry" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp">
+
+            <LinearLayout
+                android:layout_width="270sp"
+                android:layout_height="103sp"
+                android:background="@drawable/hollowbg"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="199sp"
+                    android:layout_height="22sp"
+                    android:layout_marginStart="22sp"
+                    android:onClick="sad"
+                    android:layout_marginTop="40sp"
+                    android:background="@drawable/sadfornoreason" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp">
+
+            <LinearLayout
+                android:layout_width="240sp"
+                android:layout_height="103sp"
+                android:background="@drawable/hollowbg"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="199sp"
+                    android:onClick="veryhappy"
+                    android:layout_height="22sp"
+                    android:layout_marginStart="22sp"
+                    android:layout_marginTop="40sp"
+                    android:background="@drawable/vvhappy" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_marginTop="19sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="55sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/termslogo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:text="Terms and Service"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="55sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/aboutlogo"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:text="About"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="55sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/reportbug"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:text="Report Bugs"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

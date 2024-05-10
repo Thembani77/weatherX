@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startui">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thestar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="283dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="304dp"
+        android:fontFamily="serif"
+        android:letterSpacing="0.02"
+        android:lineSpacingExtra="2sp"
+        android:text="Let's See The Weather Around You"
+        android:textAlignment="viewStart"
+        android:textColor="#0C1823"
+        android:textDirection="anyRtl"
+        android:textSize="42.16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/goldstar"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="60sp"
+        android:id="@+id/btnCheck"
+        android:fontFamily="serif"
+        android:onClick="checkBtn"
+        android:letterSpacing="0.02"
+        android:background="@drawable/buttonbg"
+        android:textColor="@color/white"
+        android:text="let's check"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
